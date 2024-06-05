@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif; 
+    color: #111;   
+} 
+
+/* ############################# Utility Classes ######################## */
+
+.container{
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+.textblue{
+    color: rgb(0, 0, 134)
+}
+.textlight{
+    color: #f0eeee;
+}
+.textblack{
+    color: #111;
+}
+.textgrey{
+    color: #555;
+}
+.bgcolor{
+    background-color: #222;
+}
+
+/* ############################ header styling ######################### */
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: url('../img/6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar .logo{
+    float: left;
+    margin-top: 0.5em;
+    font-size: 4rem;
+    border-left: 4px solid black;
+    padding: 15px;
+}
+
+.navbar .items{
+    display: inline-block;
+    list-style: none;
+    text-align: right;
+    
+}
+.navbar .items .item{
+    float: right;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 1em;
+    margin-top: 2em;
+    font-size: 2rem;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+.navbar a:link,
+.navbar a:visited{
+
+    color:rgb(196, 196, 196);
+}
+.navbar a:hover{
+    border-bottom: 3px solid rgb(82, 82, 82);
+}
+.header .hcontent .great{
+    font-size: 4rem;
+    margin-top: 4em;
+    word-spacing: 1rem;
+    text-transform: uppercase;
+}
+.header .hcontent .greats{
+    font-size: 1rem;
+    margin-top: 1em;
+    text-transform: uppercase;
+    word-spacing: 1rem;
+}
+.hcontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    
+}
+
+
+.header .hcontent a.button{
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    margin: 0.5em 0;
+    border: #f0eeee;
+    background-color: #814e0a8f;
+    color: #111;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 10em;
+
+}
+.header .hcontent a.button:hover{
+background-color: indianred;
+}
+
+/* ################################ feature ############################# */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem;
+}
+
+.container .row{
+    margin-bottom: 10rem; 
+    height: 35rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 5px #aaa; 
+} 
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.row1 .imgbox , .row2 .contentbox{
+    float: left;
+    width: 50%;
+}
+.row1 .contentbox , .row2 .imgbox{
+    float: right;
+    width: 50%;
+   
+}
+ .imgbox img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row .contentbox{
+    text-align: left;
+    padding: 1rem;
+}
+h2{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+
+}
+.row p{
+    font-size: 1.5rem;
+    word-spacing: 1px;
+}
+
+.row a{
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    margin: 0.5em 0;
+    border: #f0eeee;
+    background-color: #814e0a8f;
+    color: #111;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 10em;
+}
+.row a:hover{
+    background-color: indianred;
+}
+
+/* #################### Feature Styling ################### */
+ 
+
+.hf i{
+    color: #814e0a8f;
+}
+.feature{
+    padding: 8rem 0;
+    font-size: 2rem;
+}
+.box-wrapper{
+    padding: 8rem 0;
+    font-size: 2rem;
+  
+}
+.box{
+    width: 33.3333333%;
+    float: left;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+h3{
+    margin: 1rem 0;
+}
+.box1 , .box3{
+    background-color: #814e0a8f;
+    color: white;
+}
+.box2{
+    background-color: whitesmoke;
+}
+.feature h2{
+    border-bottom: 5px solid #814e0a8f;
+}
+
+
+/* ####################### Footer #################### */
+
+footer{
+    font-size: 3rem;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #222;
+    color: whitesmoke;
+}
+
+
+/* ################### About page ################## */
+.centre{
+    font-size: 2rem;
+
+}
+.about .h2{
+    display: block;
+    color: #222;
+    border-bottom: 4px solid #814e0a8f;
+}
+.aboutlogo{
+    color:rgb(196, 196, 196);
+}
+
+.cnt{
+    content: '';
+    display: block;
+    clear: both;
+}
+.b1 , .b2{
+    padding: 3rem 0;
+    width: 50%;
+    float: left;
+    text-align: center;
+
+}
+
+.b1 i{
+    color: #814e0a8f;
+}
+
+.b2 i{
+    color: #814e0a8f;
+}
+
+.bx1 , .bx2 , .bx3 , .bx4{
+    padding: 2rem 0;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+/* .conatiner3{
+    content: '';
+    display: block;
+    clear: both; */
+/* } */
+/* .good::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container4{
+    background-color: indianred;
+    color: whitesmoke;
+}
+a.link1{
+    border: 3px solid whitesmoke;
+
+} */
+
+.cnt::after{
+    
+    content: '';
+    display: block;
+    clear: both;
+    padding: 3rem;
+}
+
+.bner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.bner{
+   
+    background-color: #814e0a8f;
+    padding: 2rem;
+}
+.bner .typeing{
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 12rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+
+}
+
+.bner .banner{
+    float: right;
+  
+}
+.lbnr{
+    border: 3px solid whitesmoke;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 15rem;
+    margin-top: .5rem;
+    font-size: 3rem;
+
+}
+.ibnr:hover{
+    background-color: indianred;
+}
+
+
+
+
+
+
+
+
+/* ################## media ################## */
+
+@media (max-width: 500px){
+    html{
+        font-size: 40%;
+
+    }
+    .navbar .logo{
+        float: none;
+        display: inline-block;
+        width: 100%;
+       
+        border-left: none;
+    }
+    .navbar .items{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        padding-right: 10rem;
+       
+    }
+    .navbar{
+        text-align: center;
+    }
+} 
+@media (max-width: 500px){
+    .row1 .imgbox , .row2 .contentbox{
+        float: none;
+        width: 100%;
+    }
+    .row1 .contentbox , .row2 .imgbox{
+        float: none;
+        width: 100%;
+    }
+    .contentbox h2{
+       
+        font-size: 10px;
+
+    }
+    .contentbox p{
+        font-size: 7px;
+      
+    }
+    .contentbox a{
+        font-size: 9px;
+        text-align: center;
+    }
+    .box{
+        float: none;
+        width: 100%;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
+/* ############## Media About ################## */
+
+@media (max-width: 500px){
+
+    .cnt .b1{
+        float: none;
+        width: 100%;
+    }
+    .cnt .b2{
+        float: none;
+        width: 100%;
+    }
+
+    .bner .banner{
+        float: none;
+        text-align: center;
+    }
+
+    .bner .typeing{
+        float: none;
+        text-align: center;
+        margin: 0%;
+        margin-bottom: 2rem;
+    }
+    .banner a{
+        display: inline-block;
+        text-align: center;
+        margin: 0%;
+    } 
+}
+
+/* ################## contact media ################ */
+
+@media (max-width: 500px){
+    .compnyadd{
+        float: none;
+        width: 100%;
+    }
+
+    .details{
+        float: none;
+        width: 100%;
+
+    }
+}
